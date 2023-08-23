@@ -1,31 +1,40 @@
-class Calculator{
-private double n1 ;
-private double n2;
-
-void setN1(double d){n1=d;}
-void setN2(double d){n2=d;}
-
-double add(){return n1+n2;}
-double subtract(){return n1-n2;}
-double multiply(){return n1*n2;}
-double divide(){return 0.5*n1/n2;}
+import java.util.*;
+class Area{
+    private double height;
+    private double breadth;
+    private double length;
+    private double radius;
+    void setHeight(double d){height=d;}
+    void setBreadth(double d){breadth=d;}
+    void setLength(double d){length=d;}
+    void setRadius(double d){radius=d;}
+    double circle(){return 3.14*radius*radius;}
+    double square(){return length*breadth;}
+    double rectangle(){return length*breadth;}
+    double triangle(){return 0.5*breadth*height;}
 
 }
 
 public class Main{
-public static void main(String[]args){
-Calculator c=new Calculator();
-c.setN1(2);
-c.setN2(2);
+      public static void main(String[]args){
+           Scanner sc=new Scanner(System.in);
+           double height=sc.nextDouble();
+           double breadth=sc.nextDouble();
+           double length=sc.nextDouble();
+           double radius=sc.nextDouble();
+           Area a=new Area();
+           a.setHeight(height);
+           a.setBreadth(breadth);
+           a.setLength(length);
+           a.setRadius(radius);
 
-
-double add=c.add();
-System.out.println(add);
-double subtract=c.subtract();
-System.out.println(subtract);
-double multiply=c.multiply();
-System.out.println(multiply);
-double divide=c.divide();
-System.out.println(divide);
+          double circle=a.circle();
+          System.out.println(circle);
+          double square=a.square();
+          System.out.println(square);
+          double rectangle=a.rectangle();
+          System.out.println(rectangle);
+         double triangle=a.triangle();
+         System.out.println(triangle);
 }
 }
