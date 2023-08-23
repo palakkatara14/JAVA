@@ -1,4 +1,4 @@
-/*import java.util.*;
+import java.util.*;
 public class fact{
     public static void fact(int n){
         int f=1;
@@ -17,8 +17,8 @@ public class fact{
         
         
     }
-}*/
-import java.util.*;
+}
+/*import java.util.*;
 public class fact{
     public static int fact(int n){ //void //no return
         int f=1;
@@ -39,11 +39,10 @@ public class fact{
     
        
     public static void main(String[]args){
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        fact f=new fact();
-        f.fact(n);
+        
+        fact f1=new fact();
+        f1.fact(5);
         
         
     }
-}
+}*/
