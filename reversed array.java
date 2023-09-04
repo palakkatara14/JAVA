@@ -4,7 +4,7 @@ public class Main{
    
    public static void main(String[]args){
    
-     int count=0;
+     
      Scanner sc=new Scanner(System.in);
      System.out.println("enter the size/length of array");
      int n=sc.nextInt();
